@@ -1,0 +1,4 @@
+.firebase,
+.firebasesrc,
+firebase.json,
+package-lock.json
