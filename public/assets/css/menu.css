@@ -1,4 +1,4 @@
-/* Navbar */
+/* navbar - Header */
 header{
 	height: 120px;
 	width: 100%;
@@ -39,6 +39,7 @@ header .navbar_list-item{
 	z-index: 1;
 	top: 25px;
 	left: 5px;
+	background-color: var(--color_white);
 }
 .navbar_list-item-app{
 	display: flex;
@@ -240,12 +241,6 @@ header .navbar_list-item{
 	padding: 16px 36px;
 	justify-content: space-between;
 }
-.btn:hover{
-	background-color: #eee;
-}
-.btn-primary:hover{
-	background-color: #f21;
-}
 .btn-size-s{
 	font-size: 15px;
 	display: flex;
@@ -349,6 +344,7 @@ header .navbar_list-item{
 	top: 40px;
 	border-radius: 2px;
 	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+	z-index: 1;
 }
 .search-cart-list:after{
 	content: "";
@@ -511,6 +507,7 @@ header .navbar_list-item{
 	box-shadow: 1px 1px #ccc;
 	border-radius: 3px;
 	display: none;
+	z-index: 1;
 }
 .search-bar .select .option .option_list .item{
 	padding:10px 9px 3px;
@@ -554,7 +551,8 @@ header .navbar_list-item{
 	border-radius: 3px;
 	box-shadow: 0 1px 5px #ccc;
 	padding: 0;
-	overflow: hidden
+	overflow: hidden;
+	z-index: 1;
 }
 .search-bar .search-bar-input-wrap .search-bar-history p{
 	height: 40px;

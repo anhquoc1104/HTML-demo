@@ -1,5 +1,5 @@
 :root{
-	--color_font: #622d2 d;
+	--color_font: #622d2d;
 	--color_white: #fff;
 	--color_black: #000;
 	--height_navbar: 38px;
@@ -15,7 +15,35 @@ body{
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 }
-
+.grid{
+   width: 1200px;
+   max-width: 100%;
+   margin: 0 auto;
+}
+.grid__full-width{
+   width: 100%;
+}
+.grid-row{
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -5px;
+   margin-right: -5px;
+}
+.grid-col-2{
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 16.6667%;
+}
+.grid-col-2-5{
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 20%;
+}
+.grid-col-10{
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 83.3333%;
+}
 @keyframes fadeIns{
    from{
       opacity: 0;
@@ -54,12 +82,18 @@ body{
    background-color: #ffe;
    cursor: pointer;
 }
-.btn .btn-primary{
+.btn-primary{
    color: #fff;
    background-color: #f23d0f;
 }
-.btn .btn-primary-disable{
+.btn-primary-disable{
    color: #949494;
    cursor: default;
    background-color: #c3c3c3;
+}
+.btn:hover{
+	background-color: #eee;
+}
+.btn-primary:hover{
+	background-color: #f21;
 }
