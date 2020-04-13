@@ -383,6 +383,10 @@ header .navbar_list-item{
 	margin: 3px 0 10px 0;
 	padding: 10px 10px 5px 10px;
 }
+.search-cart-list-has ul{
+	height: 40vh;
+	overflow-y: auto;
+}
 .search-cart-list-has ul li{
 	list-style: none;
 	display: flex;
