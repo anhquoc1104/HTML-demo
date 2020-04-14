@@ -362,3 +362,6 @@ section .container_body .home__filter{
    color: var(--color_white);
    line-height: 0.9rem;
 }
+.container_body .pagination__home__product{
+   margin: 20px 0px 15px;
+}
