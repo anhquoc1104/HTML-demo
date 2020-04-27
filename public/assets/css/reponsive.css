@@ -103,6 +103,6 @@
     top: calc(var(--height_header) + var(--height_header-sort));
     left: 0;
     right: 0;
-    box-shadow: ;
+    box-shadow: none;
   }
 }
