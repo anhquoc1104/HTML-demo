@@ -10,14 +10,16 @@
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/menu.css">
 	<link rel="stylesheet" href="./assets/css/body_nav.css">
+	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" href="./assets/css/reponsive.css">
 	<link rel="stylesheet" href="./sources/font-awesome/css/all.min.css">
 	<title>DEMO</title>
 </head>
 
 <body>
 	<header>
-		<div class="grid">
-			<div class="navbar">
+		<div class="grid wide">
+			<div class="navbar hide--on--tablet--mobile">
 				<ul class="navbar_list">
 					<li class=" navbar_list-item navbar_list-QrApp navbar_list-item-border">
 						<a href="#">Tải ứng dụng Tickid</a>
@@ -118,7 +120,11 @@
 				</ul>
 			</div>
 			<div class="navbar_search">
-				<div class="search-logo">
+				<input type="checkbox" hidden id="mobile--search-checkbox">
+				<label for="mobile--search-checkbox" class="header__mobile-search">
+					<i class="header__mobile-search--icon fas fa-search"></i>
+				</label>
+				<div class="search-logo hide--on--tablet">
 					<svg class="search-logo-img" viewBox="0 0 192 65">
 						<g fill-rule="evenodd">
 							<path fill="#fff"
@@ -127,7 +133,7 @@
 						</g>
 					</svg>
 				</div>
-				<div class="search-bar">
+				<div class="search-bar hide">
 					<div class="search-bar-input-wrap">
 						<input class="search-bar-input" type="text" placeholder="Tìm kiếm sản phẩm">
 						<div class="search-bar-history">
@@ -286,6 +292,20 @@
 				</div>
 			</div>
 		</div>
+		<ul class="header__sort--bar">
+			<li class="header__sort--item">
+				<a href="#" class="header__sort--link">Liên quan</a>
+			</li>
+			<li class="header__sort--item header__sort--item--active">
+				<a href="#" class="header__sort--link">Mới nhất</a>
+			</li>
+			<li class="header__sort--item">
+				<a href="#" class="header__sort--link">Bán chạy</a>
+			</li>
+			<li class="header__sort--item">
+				<a href="#" class="header__sort--link">Giá</a>
+			</li>
+		</ul>
 	</header>
 	<section>
 		<!-- <div class="modal">
@@ -383,9 +403,9 @@
 	</section>
 	<section>
 		<div class="container_body">
-			<div class="grid">
-				<div class="grid-row container_body--content">
-					<div class="grid-col-2">
+			<div class="grid wide">
+				<div class="row sm-gutter container_body--content">
+					<div class="col l-2 m-0 c-0">
 						<nav class="category">
 							<h5 class="category__heading">
 								<i class="category__heading--icon fas fa-list-ul"></i>
@@ -416,12 +436,13 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="grid-col-10">
-						<div class="home__filter">
+					<div class="col l-10 m-12 c-12">
+						<div class="home__filter hide--on--tablet--mobile">
 							<span class="home__filter--label">Sắp xếp theo</span>
 							<button class="home__filter--btn btn btn-primary">Phổ biến</button>
 							<button class="home__filter--btn btn">Mới nhất</button>
 							<button class="home__filter--btn btn">Bán chạy</button>
+							
 							<div class="home__filter--select">
 								<span class="home__filter--select--price">Giá</span>
 								<i class="home__filter--select--icon fas fa-angle-down"></i>
@@ -443,8 +464,8 @@
 							</div>
 						</div>
 						<div class="home__product">
-							<div class="grid-row">
-								<div class="grid-col-2-5 home__product--contain">
+							<div class="row sm-gutter">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-1.jpg');"></div>
@@ -488,7 +509,7 @@
 									</a>
 
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-2.jpg');"></div>
@@ -531,7 +552,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-3.jpg');"></div>
@@ -574,7 +595,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-4.jpg');"></div>
@@ -617,7 +638,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-5.jpg');"></div>
@@ -660,9 +681,7 @@
 										</div>
 									</a>
 								</div>
-							</div>
-							<div class="grid-row">
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-6.jpg');"></div>
@@ -706,7 +725,7 @@
 									</a>
 
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-7.jpg');"></div>
@@ -749,7 +768,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-8.jpg');"></div>
@@ -792,7 +811,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-9.jpg');"></div>
@@ -835,7 +854,7 @@
 										</div>
 									</a>
 								</div>
-								<div class="grid-col-2-5 home__product--contain">
+								<div class="col l-2-4 m-4 c-6 home__product--contain">
 									<a class="home__product__item">
 										<div class="home__product__item--img"
 											style="background-image: url('./assets/img/product/p-10.jpg');"></div>
@@ -920,9 +939,9 @@
 	</section>
 	<footer>
 		<div class="container__footer">
-			<div class="grid">
-				<div class="grid-row container__footer--content">
-					<div class="grid-col-2-5">
+			<div class="grid wide">
+				<div class="row container__footer--content">
+					<div class="col l-2-4 m-3">
 						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
 						<ul class="footer__list">
 							<li class="footer__item">
@@ -948,7 +967,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="grid-col-2-5">
+					<div class="col l-2-4 m-3">
 						<h3 class="footer__heading">Giới thiệu</h3>
 						<ul class="footer__list">
 							<li class="footer__item">
@@ -965,7 +984,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="grid-col-2-5">
+					<div class="col l-2-4 m-3">
 						<h3 class="footer__heading">Theo dõi</h3>
 						<ul class="footer__list">
 							<li class="footer__item">
@@ -988,7 +1007,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="grid-col-2-5">
+					<div class="col l-2-4 m-3">
 						<h3 class="footer__heading">Thanh toán</h3>
 						<ul class="footer__list">
 							<li class="footer__item">
@@ -1005,7 +1024,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="grid-col-2-5">
+					<div class="col l-2-4 m-3">
 						<h3 class="footer__heading">Liên hệ</h3>
 						<ul class="footer__list">
 							<li class="footer__item"><a href="" class="footer__item--link">Địa chỉ: 123/Nguyễn Thái Học, p. ABC, tp.
