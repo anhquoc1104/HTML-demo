@@ -397,6 +397,10 @@ header .navbar_list-item {
 	top: -10px;
 	right: -9px;
 	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+.search-cart-wrap{
+	-webkit-tap-highlight-color: transparent;
 }
 
 .search-cart-icon {
